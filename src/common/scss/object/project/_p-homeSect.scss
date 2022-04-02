@@ -1,0 +1,12 @@
+@use '../../global' as g;
+
+.p-homeSect {
+  padding: 20px 0 50px;
+
+  @include g.mq(md) {
+    padding: 40px 0;
+  }
+  @include g.mq(lg) {
+    padding: 7.72698004% 0;
+  }
+}

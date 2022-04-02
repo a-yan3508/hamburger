@@ -1,0 +1,14 @@
+@use '../global' as g;
+
+.l-cont {
+  width: calc(100% - 40px);
+  max-width: 1330px;
+  margin: 0 auto;
+
+  @include g.mq(md) {
+    width: calc(100% - 80px);
+  }
+  @include g.mq(lg) {
+    width: calc(100% - 14.1661301%);
+  }
+}

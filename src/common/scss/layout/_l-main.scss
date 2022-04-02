@@ -1,0 +1,8 @@
+@use '../global' as g;
+
+.l-main {
+  @include g.mq(lg) {
+    // width: 80.8854167%;
+    width: calc(100% - 367px);
+  }
+}

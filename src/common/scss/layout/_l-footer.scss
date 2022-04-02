@@ -1,0 +1,88 @@
+@use '../global' as g;
+
+.l-footer {
+  padding: 40px 20px 30px;
+  color: #fff;
+  background: url('/src/common/images/footer_bg.png') no-repeat center;
+  background-size: cover;
+  &__linkList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+
+    @include g.mq(md) {
+      flex-wrap: nowrap;
+    }
+    li {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 60%;
+        background-color: currentColor;
+      }
+      &:nth-child(2n-1) {
+        &::before {
+          content: none;
+
+          @include g.mq(md) {
+            content: '';
+          }
+        }
+        a {
+          padding-left: 0;
+
+          @include g.mq(md) {
+            padding-left: 15px;
+          }
+        }
+      }
+      &:nth-child(2n) {
+        a {
+          padding-right: 0;
+
+          @include g.mq(md) {
+            padding-right: 15px;
+          }
+        }
+      }
+      &:first-child {
+        &::before {
+          @include g.mq(md) {
+            content: none;
+          }
+        }
+        a {
+          @include g.mq(md) {
+            padding-left: 0;
+          }
+        }
+      }
+      &:last-child {
+        a {
+          @include g.mq(md) {
+            padding-right: 0;
+          }
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 0 15px;
+
+        @include g.fsz(20, 30);
+      }
+    }
+  }
+  &__copy {
+    text-align: center;
+    
+    @include g.fsz(14, 20);
+  }
+}
