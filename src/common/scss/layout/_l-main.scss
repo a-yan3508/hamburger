@@ -1,7 +1,7 @@
-@use '../global' as g;
+@use '../foundation' as f;
 
 .l-main {
-  @include g.mq(lg) {
+  @include f.mq(lg) {
     // width: 80.8854167%;
     width: calc(100% - 367px);
   }

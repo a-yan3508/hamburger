@@ -8,15 +8,18 @@ if ($('.l-menu').length > 0) {
   headerMenuToggle.on('click', function () {
     menu.addClass('is-active');
     menuSlide.addClass('is-active');
+    $('body').addClass('u-ovh');
   });
 
   menuClose.on('click', function () {
     menu.removeClass('is-active');
     menuSlide.removeClass('is-active');
+    $('body').removeClass('u-ovh');
   });
 
   menuBg.on('click', function () {
     menu.removeClass('is-active');
     menuSlide.removeClass('is-active');
+    $('body').removeClass('u-ovh');
   });
 }

@@ -1,17 +1,17 @@
-@use '../global' as g;
+@use '../foundation' as f;
 
 .l-header {
   position: relative;
   padding: 40px 27px;
   background-color: #fff7ef;
 
-  @include g.mq(lg) {
+  @include f.mq(lg) {
     // width: 80.8854167%;
     width: calc(100% - 367px);
     padding: 65px 30px 65px 65px;
   }
   &__inner {
-    @include g.mq(lg) {
+    @include f.mq(lg) {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -21,18 +21,18 @@
     text-align: center;
     margin: 0 0 38px 0;
 
-    @include g.mq(lg) {
+    @include f.mq(lg) {
       margin: 0 40px 0 0;
     }
     a {
       // display: block;
       text-decoration: none;
-      color: g.$gray;
-      font-family: g.$roboto;
+      color: f.$gray;
+      font-family: f.$roboto;
 
-      @include g.fsz(40, 53);
-      @include g.mq(lg) {
-        @include g.fsz(64, 84);
+      @include f.fsz(40, 53);
+      @include f.mq(lg) {
+        @include f.fsz(64, 84);
       }
     }
   }
@@ -41,7 +41,7 @@
     max-width: 545px;
     margin: 0 auto;
 
-    @include g.mq(lg) {
+    @include f.mq(lg) {
       margin: 0;
     }
     form {
@@ -67,7 +67,7 @@
     input {
       width: 100%;
       border-radius: 10px;
-      border: 1px solid g.$gray;
+      border: 1px solid f.$gray;
       padding: 11px 11px 11px 50px;
       outline: none;
     }
@@ -76,17 +76,17 @@
     width: 78px;
     padding: 11px 16px;
     margin-left: 12px;
-    color: g.$gray;
-    font-family: g.$mPlus;
+    color: f.$gray;
+    font-family: f.$mPlus;
     font-weight: 700;
     background: linear-gradient(to bottom, #f2ede9, #ded8d3);
     border-radius: 10px;
-    border: 1px solid g.$gray;
+    border: 1px solid f.$gray;
     outline: none;
     appearance: none;
     cursor: pointer;
 
-    @include g.mq(md) {
+    @include f.mq(md) {
       width: 136px;
     }
   }
@@ -95,11 +95,11 @@
     top: 14px;
     right: 16px;
 
-    @include g.mq(md) {
+    @include f.mq(md) {
       top: 18px;
       right: 26px;
     }
-    @include g.mq(lg) {
+    @include f.mq(lg) {
       display: none;
     }
     button {
@@ -108,13 +108,13 @@
       border: none;
       outline: none;
       background: transparent;
-      color: g.$gray;
-      font-family: g.$roboto;
+      color: f.$gray;
+      font-family: f.$roboto;
       cursor: pointer;
 
-      @include g.fsz(20, 26);
-      @include g.mq(md) {
-        @include g.fsz(34, 45);
+      @include f.fsz(20, 26);
+      @include f.mq(md) {
+        @include f.fsz(34, 45);
       }
     }
   }

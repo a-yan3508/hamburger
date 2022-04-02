@@ -1,7 +1,7 @@
-@use '../../global' as g;
+@use '../../foundation' as f;
 
 .p-homeCardUnit {
-  @include g.mq(md) {
+  @include f.mq(md) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -13,21 +13,21 @@
   }
   &--col2 {
     .p-homeCard {
-      @include g.mq(md) {
+      @include f.mq(md) {
         width: calc((100% - 40px) / 2);
         margin: 40px 0 0 40px;
       }
-      @include g.mq(lg) {
+      @include f.mq(lg) {
         width: calc((100% - 6.01503759%) / 2);
         margin: 6.01503759% 0 0 6.01503759%;
       }
       &:nth-child(-n+2) {
-        @include g.mq(md) {
+        @include f.mq(md) {
           margin-top: 0;
         }
       }
       &:nth-child(2n+1) {
-        @include g.mq(md) {
+        @include f.mq(md) {
           margin-left: 0;
         }
       }
@@ -38,10 +38,10 @@
   width: 100%;
   min-height: 642px;
 
-  @include g.mq(md) {
+  @include f.mq(md) {
     min-height: 681px;
   }
-  @include g.mq(lg) {
+  @include f.mq(lg) {
     min-height: 62.1354167vw;
   }
   &--takeOut {
@@ -64,7 +64,7 @@
     padding: 12px;
     text-decoration: none;
 
-    @include g.mq(md) {
+    @include f.mq(md) {
       min-height: 100%;
     }
   }
@@ -72,18 +72,18 @@
     display: block;
     margin-bottom: 40px;
     color: #fff;
-    font-family: g.$roboto;
+    font-family: f.$roboto;
 
-    @include g.fsz(41, 54);
-    @include g.mq(md) {
-      @include g.fsz(44, 58);
+    @include f.fsz(41, 54);
+    @include f.mq(md) {
+      @include f.fsz(44, 58);
     }
-    @include g.mq(lg) {
+    @include f.mq(lg) {
       font-size: 4.16666667vw;
       line-height: 1.325;
     }
-    @include g.mq(xlg) {
-      @include g.fsz(80, 106);
+    @include f.mq(xlg) {
+      @include f.fsz(80, 106);
     }
     &::after {
       content: '';
@@ -93,10 +93,10 @@
       margin-top: 19px;
       background-color: #fff;
 
-      @include g.mq(md) {
+      @include f.mq(md) {
         width: 36px;
       }
-      @include g.mq(lg) {
+      @include f.mq(lg) {
         width: .788em;
         max-width: 63px;
       }
@@ -115,10 +115,10 @@
     padding: 20px 10px;
     background-color: rgba(255, 255, 255, .8);
 
-    @include g.mq(md) {
+    @include f.mq(md) {
       min-height: 172px;
     }
-    @include g.mq(lg) {
+    @include f.mq(lg) {
       min-height: 9.0625vw;
     }
   }
@@ -126,12 +126,12 @@
     margin-bottom: 20px;
     font-weight: 700;
 
-    @include g.fsz(22, 33);
-    @include g.mq(md) {
-      @include g.fsz(24, 36);
+    @include f.fsz(22, 33);
+    @include f.mq(md) {
+      @include f.fsz(24, 36);
     }
   }
   &__txt {
-    @include g.fsz(16, 23);
+    @include f.fsz(16, 23);
   }
 }

@@ -1,4 +1,4 @@
-@use '../../global' as g;
+@use '../../foundation' as f;
 
 .p-homeMv {
   width: 100%;
@@ -9,7 +9,7 @@
   background: url('/src/common/images/mv_bg_sp.jpg') no-repeat center;
   background-size: cover;
 
-  @include g.mq(md) {
+  @include f.mq(md) {
     padding: 0 86px;
     background-image: url('/src/common/images/mv_bg_pc.jpg');
     height: 34.1726619vw;
@@ -19,9 +19,9 @@
     color: #fff;
     font-weight: 700;
 
-    @include g.fsz(36, 54);
-    @include g.mq(lg) {
-      @include g.fsz(40, 60);
+    @include f.fsz(36, 54);
+    @include f.mq(lg) {
+      @include f.fsz(40, 60);
     }
   }
 }

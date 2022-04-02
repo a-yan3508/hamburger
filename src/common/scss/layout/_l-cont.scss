@@ -1,14 +1,14 @@
-@use '../global' as g;
+@use '../foundation' as f;
 
 .l-cont {
   width: calc(100% - 40px);
   max-width: 1330px;
   margin: 0 auto;
 
-  @include g.mq(md) {
+  @include f.mq(md) {
     width: calc(100% - 80px);
   }
-  @include g.mq(lg) {
+  @include f.mq(lg) {
     width: calc(100% - 14.1661301%);
   }
 }
