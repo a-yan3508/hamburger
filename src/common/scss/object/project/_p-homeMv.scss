@@ -6,12 +6,12 @@
   display: flex;
   align-items: center;
   padding: 0 25px;
-  background: url('/src/common/images/mv_bg_sp.jpg') no-repeat center;
+  background: url('/src/common/images/front-page/mv_bg_sp.jpg') no-repeat center;
   background-size: cover;
 
   @include f.mq(md) {
     padding: 0 86px;
-    background-image: url('/src/common/images/mv_bg_pc.jpg');
+    background-image: url('/src/common/images/front-page/mv_bg_pc.jpg');
     height: 34.1726619vw;
     max-height: 530px;
   }

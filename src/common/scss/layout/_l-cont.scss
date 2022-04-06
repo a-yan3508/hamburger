@@ -11,4 +11,7 @@
   @include f.mq(lg) {
     width: calc(100% - 14.1661301%);
   }
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }

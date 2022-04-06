@@ -45,14 +45,14 @@
     min-height: 62.1354167vw;
   }
   &--takeOut {
-    background: url('/src/common/images/takeout_bg.jpg') no-repeat center;
+    background: url('/src/common/images/front-page/takeout_bg.jpg') no-repeat center;
     background-size: cover;
     .p-homeCard__head {
       color: #eaeaea;
     }
   }
   &--eatIn {
-    background: url('/src/common/images/eatin_bg.jpg') no-repeat center;
+    background: url('/src/common/images/front-page/eatin_bg.jpg') no-repeat center;
     background-size: cover;
   }
   &__inner {
