@@ -6,7 +6,6 @@
   background-color: #fff7ef;
 
   @include f.mq(lg) {
-    // width: 80.8854167%;
     width: calc(100% - 367px);
     padding: 65px 30px 65px 65px;
   }
@@ -25,7 +24,6 @@
       margin: 0 40px 0 0;
     }
     a {
-      // display: block;
       text-decoration: none;
       color: f.$gray;
       font-family: f.$roboto;

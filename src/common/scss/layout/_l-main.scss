@@ -2,7 +2,6 @@
 
 .l-main {
   @include f.mq(lg) {
-    // width: 80.8854167%;
     width: calc(100% - 367px);
   }
 }
